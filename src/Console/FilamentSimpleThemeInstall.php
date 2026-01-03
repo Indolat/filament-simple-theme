@@ -3,14 +3,8 @@
 namespace Indolat\FilamentSimpleTheme\Console;
 
 use Illuminate\Console\Command;
-use TomatoPHP\ConsoleHelpers\Traits\HandleFiles;
-use TomatoPHP\ConsoleHelpers\Traits\RunCommand;
-
 class FilamentSimpleThemeInstall extends Command
 {
-    use RunCommand;
-    use HandleFiles;
-
     /**
      * The name and signature of the console command.
      *
@@ -39,9 +33,18 @@ class FilamentSimpleThemeInstall extends Command
     public function handle()
     {
         $this->info('Publish Vendor Assets');
-        $this->copyFile(__DIR__ . '/../../publish/vite.config.js', base_path('vite.config.js'));
-        $this->copyFile(__DIR__ . '/../../publish/package.json', base_path('package.json'));
-        $this->artisanCommand(["filament:optimize"]);
+        
+        $viteConfig = __DIR__ . '/../../publish/vite.config.js';
+        if(\Illuminate\Support\Facades\File::exists($viteConfig)){
+            \Illuminate\Support\Facades\File::copy($viteConfig, base_path('vite.config.js'));
+        }
+        
+        $packageJson = __DIR__ . '/../../publish/package.json';
+        if(\Illuminate\Support\Facades\File::exists($packageJson)){
+            \Illuminate\Support\Facades\File::copy($packageJson, base_path('package.json'));
+        }
+
+        $this->call("filament:optimize");
         $this->info('Filament Simple Theme installed successfully. please run npm install && npm run dev');
     }
 }
