@@ -1,3 +1,4 @@
+@import '../../../../filament/filament/resources/css/theme.css';
 @import "tailwindcss";
 @plugin 'tailwindcss-animate';
 @plugin 'flowbite/plugin';
@@ -77,9 +78,9 @@
     --color-info-950: var(--info-950);
 }
 
-@source "../../../../app/Filament/**/*.php";
-@source "../../../../resources/views/filament/**/*.blade.php";
-@source "../../../../vendor/filament/**/*.blade.php";
+@source "../../../../../app/Filament/**/*.php";
+@source "../../../../../resources/views/filament/**/*.blade.php";
+@source "../../../../../vendor/filament/**/*.blade.php";
 @source "../views/**/*.blade.php";
 
 .fi-body {

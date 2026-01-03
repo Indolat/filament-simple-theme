@@ -34,7 +34,7 @@
                         </div>
                     </div>
                     <div  class="flex flex-col justify-center items-center">
-                        <x-icon name="heroicon-s-chevron-up" class="w-4 h-4 text-gray-400" />
+                        <x-filament::icon icon="heroicon-s-chevron-up" class="w-4 h-4 text-gray-400" />
                     </div>
                 </div>
             </div>

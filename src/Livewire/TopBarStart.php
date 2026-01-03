@@ -10,7 +10,7 @@ use Livewire\Component;
 class TopBarStart extends Component
 {
     public ?string $title = null;
-    public ?string $icon = null;
+    public mixed $icon = null;
 
     public function mount()
     {
