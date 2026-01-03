@@ -1,0 +1,41 @@
+{
+    "name": "indolat/filament-simple-theme",
+    "type": "library",
+    "description": "A simple theme for FilamentPHP with custom user menu in sidebar",
+    "keywords": [
+        "php",
+        "laravel",
+        "filament",
+        "filament-theme",
+        "filament-theme-simple"
+    ],
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Indolat\\FilamentSimpleTheme\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Indolat\\FilamentSimpleTheme\\FilamentSimpleThemeServiceProvider"
+            ]
+        }
+    },
+    "authors": [
+        {
+            "name": "Aditya Rizqi",
+            "email": "aditya@indolat.com"
+        }
+    ],
+    "require": {
+        "php": "^8.1",
+        "tomatophp/console-helpers": "^1.1",
+        "filament/filament": "^4.0"
+    }
+}
