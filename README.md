@@ -47,7 +47,3 @@ you can publish migrations file by use this command
 ```bash
 php artisan vendor:publish --tag="filament-simple-theme-migrations"
 ```
-
-## Other Filament Packages
-
-Checkout our [Awesome TomatoPHP](https://github.com/tomatophp/awesome)
