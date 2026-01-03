@@ -1,21 +1,3 @@
-![Screenshot](https://raw.githubusercontent.com/indolat/filament-simple-theme/master/arts/3x1io-tomato-simple-theme.jpg)
-
-# Filament Simple Theme
-
-[![Latest Stable Version](https://poser.pugx.org/indolat/filament-simple-theme/version.svg)](https://packagist.org/packages/indolat/filament-simple-theme)
-[![License](https://poser.pugx.org/indolat/filament-simple-theme/license.svg)](https://packagist.org/packages/indolat/filament-simple-theme)
-[![Downloads](https://poser.pugx.org/indolat/filament-simple-theme/d/total.svg)](https://packagist.org/packages/indolat/filament-simple-theme)
-
-A simple theme for FilamentPHP with custom user menu in sidebar
-
-## Screenshots
-
-![Dashboard](https://raw.githubusercontent.com/indolat/filament-simple-theme/master/arts/dashboard.png)
-![User Menu](https://raw.githubusercontent.com/indolat/filament-simple-theme/master/arts/user-menu.png)
-![Resource](https://raw.githubusercontent.com/indolat/filament-simple-theme/master/arts/resource.png)
-![Dark Dashboard](https://raw.githubusercontent.com/indolat/filament-simple-theme/master/arts/dashboard-dark.png)
-![Dark Resource](https://raw.githubusercontent.com/indolat/filament-simple-theme/master/arts/resource-dark.png)
-
 ## Installation
 
 ```bash
