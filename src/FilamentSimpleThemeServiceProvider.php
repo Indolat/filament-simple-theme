@@ -54,12 +54,12 @@ class FilamentSimpleThemeServiceProvider extends ServiceProvider
         //Register Routes
         $this->loadRoutesFrom(__DIR__.'/../routes/web.php');
 
-        Livewire::component('topbar-start', TopBarStart::class);
-
     }
 
     public function boot(): void
     {
+        Livewire::component('topbar-start', TopBarStart::class);
+
         FilamentView::registerRenderHook(
             PanelsRenderHook::SIDEBAR_FOOTER,
             fn() => view('filament-simple-theme::sidebar-nav-end')
